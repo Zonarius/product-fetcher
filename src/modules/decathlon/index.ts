@@ -1,5 +1,6 @@
+import { HTMLElement } from "node-html-parser";
 import { from, mergeMap, Observable, of, switchMap } from "rxjs";
-import { getCheerioObs } from "../../fetch";
+import { getParsedObs } from "../../fetch";
 import { Fetcher } from "../../model";
 import { DecathlonProduct } from "./model";
 
@@ -8,26 +9,26 @@ export function matches(url: string) {
 }
 
 export function fetchProducts(url: string): Observable<DecathlonProduct> {
-  return getCheerioObs(url).pipe(
-    switchMap($ => {
-      if ($("#category-hits").length > 0) {
-        return from(getProductListUrls($))
+  return getParsedObs(url).pipe(
+    switchMap(document => {
+      if (document.querySelector("#category-hits")) {
+        return from(getProductListUrls(document))
           .pipe(
             mergeMap(fetchProducts)
           )
       } else {
-        return of(parseProduct($));
+        return of(parseProduct(document));
       }
     })
   )
 }
 
-export function getProductListUrls($: cheerio.Root): string[] {
-  return $(".ais-InfiniteHits-item a.thumbnail").toArray()
-    .map(el => $(el).attr("href")!);
+export function getProductListUrls(document: HTMLElement): string[] {
+  return document.querySelectorAll(".thumbnail--product a.thumbnail")
+    .map(el => el.getAttribute("href")!);
 }
 
-export function parseProduct($: cheerio.Root): DecathlonProduct {
+export function parseProduct(document: HTMLElement): DecathlonProduct {
   throw new Error();
 }
 

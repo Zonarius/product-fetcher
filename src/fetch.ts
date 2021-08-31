@@ -1,14 +1,12 @@
 import fetch from 'node-fetch';
-import * as cheerio from 'cheerio';
+import { HTMLElement, parse } from 'node-html-parser';
 import { defer, from, map, Observable } from 'rxjs';
 
-export async function getCheerio(url: string): Promise<cheerio.Root> {
+export function getParsed(url: string): Promise<HTMLElement> {
   console.log(`Fetching ${url}...`)
-  const resp = await fetch(url);
-  const text = await resp.text();
-  return cheerio.load(text);
+  return fetch(url).then(r => r.text()).then(parse);
 }
 
-export function getCheerioObs(url: string): Observable<cheerio.Root> {
-  return defer(() => from(getCheerio(url)));
+export function getParsedObs(url: string): Observable<HTMLElement> {
+  return defer(() => from(getParsed(url)));
 }

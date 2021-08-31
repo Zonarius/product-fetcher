@@ -1,4 +1,4 @@
-import { getCheerio } from "../src/fetch"
+import { getParsed } from "../src/fetch"
 import { getProductListUrls } from "../src/modules/decathlon";
 
 describe("decathlon", () => {
@@ -7,7 +7,7 @@ describe("decathlon", () => {
   })
 
   test("parse product list", async () => {
-    const $ = await getCheerio("https://www.decathlon.at/6873-rennrader");
-    expect(getProductListUrls($).length).toBeGreaterThan(0);
+    const doc = await getParsed("https://www.decathlon.at/6873-rennrader");
+    expect(getProductListUrls(doc).length).toBeGreaterThan(0);
   })
 })
