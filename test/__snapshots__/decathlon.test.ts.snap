@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`decathlon parse single product 1`] = `
+Object {
+  "name": "RENNRAD TRIBAN RC520 DISC",
+  "price": 899.9,
+  "technicalData": Object {
+    "Antrieb/Schaltung": "Schalthebel Shimano 105 R7000, 
+Umwerfer Shimano 105 R7000, 
+Schaltwerk Shimano 105 R7000, 11-Gang mit langem Schaltkäfig, 
+Gesamtgewicht: 843 g",
+    "Bremsen": "Scheibenbremsen TRP HY/RD, mechanisch auf hydraulischen Kolben. Zuverlässig und effizient. 160 mm Scheibe vorne und hinten. 
+Anti-Kompressionsbremszug JAGWIRE für präzises, wirksames Bremsen.
+Halbmetallischer Bremsbelag TRP (Version M515/M525).",
+    "DIE WAHL DER RICHTIGEN FAHRRADGRÖSSE": "Die Wahl der Fahrradgröße hängt nicht nur von deiner Körpergröße, sondern auch von deiner Morphologie ab (Arm- & Beinlänge). 
+Wenn du zwischen zwei Größen bist, dann hast du bei Wahl des kleineren Modells eine sportlichere und bei Wahl des größeren eine komfortablere Position.
+XS 154 165 cm
+S 165 173 cm
+M 173 180 cm
+L 180 188 cm
+XL 188 200 cm
+Im Store kannst du ein Triban 500/520 testen, da die Rahmengeometrie identisch ist.
+Einige Filialen bieten einen speziellen Vermessungsservice an.",
+    "Eignet sich das RC520 zum Bikepacking?": "Ja, dieses Fahrrad wurde für Tourenfahrten auf der Straße wie beispielsweise das sogenannte „Bikepacking“ entwickelt. Das bedeutet, dass du beispielsweise am Sattel, Rahmen und Lenker leichte Taschen anbringen kannst. Dank seines hohen Komforts ist das RC520 dein idealer Begleiter während langer Tage im Sattel.
+Dieses Fahrrad ist jedoch nicht auf längere Reisen ausgelegt. Von der Anbringung größerer Radtaschen an einem Gepäckträger raten wir ab.",
+    "Finde heraus, wie das Fahrrad in der Praxis genutzt wird!": "Unsere Triban-Fahrräder haben bereits einige Abenteuer erlebt! Entdecke unsere Triban Storys auf https://triban.exposure.co/",
+    "Gabel": "Neue Triban-Evo Gabel mit Holmen aus Carbon und Schaft aus Aluminium, 1 1/8 Zoll Aheadset. Diese Gabel verbindet Komfort mit geringem Gewicht (680 g) und Präzision.
+Das Carbon wurde überarbeitet, um eine gute seitliche Steifigkeit und Filterung frontaler Vibration zu gewährleisten.
+Aussparungen zum Anbringen eines Front-Gepäckträgers. Maximallast Gabel: 9 kg. 
+Ösen an der Radachse zur Befestigung eines Schutzblechs. 
+Kompatibel mit Reifen bis zu 700 × 36 oder 650 × 40.",
+    "Gewicht": "10,4 kg in Größe M ohne Pedale",
+    "Instructions": "Download",
+    "Kompatible Schutzbleche": "Dieses Fahrrad ist mit den folgenden Schutzblechen aus unserem Sortiment kompatibel:
+- SATTEL-SCHUTZBLECH RENNRAD FLASH BTWIN (Ref.8327786)
+- SCHUTZBLECHSET RENNRAD RACEBLADE PRO XL VON SKS (Ref. 8515529)
+- SCHUTZBLECH-SET RENNRAD BLUEMELS MATT 35 VON SKS (Ref. 8385659)
+
+Gib die Referenznummer in die Suchfunktion deiner DECATHLON Seite ein, um nähere Informationen zu den Produkten zu erhalten.",
+    "Laufräder": "Laufräder Triban Tubeless Ready* Light 
+9 mm Achse mit Schnellspanner
+Aluminium 6063T6
+ETRTO Größe: 622 × 17C,
+24 mm hoch für mehr seitliche Steifigkeit. Kreuzspeichen aus Stahl für mehr Steifigkeit (je 28 vorne und hinten).
+Gedichtete Patronenlager.Gewicht pro Paar (ohne Kassette und ohne QR): 2.000 g.
+*Zur Umrüstung auf Tubeless benötigst du ein Paar Tubeless Ready Reifen und ein Umrüstset mit 2 Tubeless Ventilen, 2 Felgenbändern und einer Flasche Pannenschutz-Flüssigkeit (Dichtmilch).",
+    "Lenker/Vorbau/Steuersatz": "Ergonomisch optimierter Triban Alulenker mit ausgezeichneter Griffigkeit und hervorragendem Komfort.
+Lenkerbreite (Mitte/Mitte): 
+XS/S: 400 mm. M/L: 420 mm. XL: 440 mm.
+Neue Triban Gabel:
+
+XS/S: 80 mmM: 100 mm L: 110 mmXL: Länge: 120 mm.",
+    "Pedale": "Inkl. FlachpedaleDas angegebene Gewicht des Fahrrads beinhaltet nicht die Pedale.",
+    "Rahmen": "Neuer Triban-Evo Rahmen aus Aluminium 6061 T6, Komfortgeometrie mit angepasstem Sloping. 
+Gewicht: 1780 g in Größe M. Stabiler, vielseitiger Rahmen: Nachrüsten von Schutzblechen und Gepäckträger möglich.
+Kompatibel mit Reifen bis zu 700 × 36 oder 650 × 40.",
+    "Reifen": "Reifen: Triban Resist+
+410 g.
+Skinwall Drahtreifen
+mit Pannenschutz: 1 mm Nylon.
+Robuste Karkasse: 55 TPI. Maße: 28–622 (700 × 28c) für noch höheren Komfort.
+Max. Druck: 8 bar/116 psiDiese Reifen sind nicht Tubeless Ready.",
+    "Sattel/Sattelstütze": "Neuer Sattel Triban ErgoFit. Hängematten-Konstruktion für mehr Komfort. Triban Sattelstütze aus Aluminium. Einfache Sattel-Einstellung, Durchmesser: 27,2 mm, Länge: 350 mm in M / L / XL, 300 mm in S, 250 mm in XS.",
+    "Tretlager/Kassette": "MICROSHIFT Kassette CS-H110 11V 11/32 
+(11/12/13/14/15/17/19/21/24/28/32).
+Kompakter Shimano RS 510 50×34-Kurbelsatz. Länge der Kurbel nach Fahrradgröße: 
+XS, S: 170 mm. M: 172,5 mm. L/XL: 175 mm.",
+    "Zubehör/Ausstattung": "Lieferung inkl. Klingel",
+  },
+  "weight": 10.4,
+}
+`;
