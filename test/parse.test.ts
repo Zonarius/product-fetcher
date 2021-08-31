@@ -21,5 +21,9 @@ describe("Parse", () => {
     test("undefined", () => {
       expect(parseNumber(undefined)).toBe(undefined);
     })
+
+    test("thousand separator", () => {
+      expect(parseNumber("2.200,00 €")).toBe(2200);
+    })
   })
 })
