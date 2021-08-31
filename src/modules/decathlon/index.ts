@@ -19,7 +19,7 @@ export function fetchProducts(url: string): Observable<DecathlonProduct> {
             mergeMap(fetchProducts)
           )
       } else {
-        return of(parseProduct(document));
+        return of({ ...parseProduct(document), url } as DecathlonProduct);
       }
     })
   )
@@ -30,14 +30,22 @@ export function getProductListUrls(document: HTMLElement): string[] {
     .map(el => el.getAttribute("href")!);
 }
 
-export function parseProduct(document: HTMLElement): DecathlonProduct {
+export function parseProduct(document: HTMLElement): Partial<DecathlonProduct> {
   const technicalData = parseTechnicals(document);
   return {
     name: document.querySelector("h1.js-title").rawText,
     price: parseNumber(document.querySelector(".price-text").rawText)!,
-    weight: parseNumber(technicalData["Gewicht"])!,
+    weight: getWeight(technicalData),
     technicalData
   }
+}
+
+function getWeight(data: Record<string, string>): number | undefined {
+  const key = Object.keys(data).find(key => key.toLocaleLowerCase().includes("gewicht"));
+  if (!key) {
+    return undefined;
+  }
+  return parseNumber(data[key]);
 }
 
 function parseTechnicals(document: HTMLElement): Record<string, string> {

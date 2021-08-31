@@ -1,5 +1,7 @@
-import { getParsed } from "../src/fetch"
+import parse from "node-html-parser";
+import { getText } from "../src/fetch"
 import { getProductListUrls, parseProduct } from "../src/modules/decathlon";
+import { testCache } from "./cache";
 
 describe("decathlon", () => {
   test("parse single product", async () => {
@@ -13,3 +15,8 @@ describe("decathlon", () => {
     expect(getProductListUrls(doc).length).toBeGreaterThan(0);
   })
 })
+
+async function getParsed(url: string) {
+  const text = await testCache(() => getText(url));
+  return parse(text);
+}

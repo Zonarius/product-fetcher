@@ -6,6 +6,10 @@ describe("Parse", () => {
       expect(parseNumber("899,90 €")).toBe(899.90);
     })
 
+    test("weight", () => {
+      expect(parseNumber("9 kg ohne Pedale in Größe M")).toBe(9);
+    })
+
     test("bogus", () => {
       expect(parseNumber("asdfg")).toBe(undefined);
     })

@@ -2,11 +2,18 @@
   "name": "product-fetcher",
   "version": "0.1.0",
   "private": true,
+  "bin": {
+    "product-fetcher": "src/index.ts"
+  },
   "scripts": {
     "start": "NODE_OPTIONS='--insecure-http-parser' ts-node src/index.ts",
     "test": "NODE_OPTIONS='--insecure-http-parser' jest"
   },
   "dependencies": {
+    "@types/fs-extra": "^9.0.12",
+    "commander": "^8.1.0",
+    "fs-extra": "^10.0.0",
+    "log4js": "^6.3.0",
     "node-fetch": "^2.6.1",
     "node-html-parser": "^4.1.4",
     "rxjs": "^7.3.0",
