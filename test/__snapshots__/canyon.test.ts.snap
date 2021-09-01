@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`canyon parse single product 1`] = `
+Object {
+  "name": "Endurace CF SL 8 Disc Di2",
+  "price": 3599,
+  "weight": 7.94,
+}
+`;
